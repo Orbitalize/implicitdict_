@@ -8,7 +8,8 @@ class MyData(ImplicitDict):
     bar: int = 0
     baz: Optional[float]
 
-data: MyData = ImplicitDict.parse({'foo': 'asdf', 'bar': 1}, MyData)
+
+data: MyData = ImplicitDict.parse({"foo": "asdf", "bar": 1}, MyData)
 assert json.dumps(data) == '{"foo": "asdf", "bar": 1}'
 ```
 

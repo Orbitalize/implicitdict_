@@ -175,7 +175,7 @@ class PropertiesData(ImplicitDict):
         return PropertiesData(foo="foo")
 
 
-class YesNo(str, enum.Enum):
+class YesNo(enum.StrEnum):
     YesOption = "Yes"
     NoOption = "No"
 
