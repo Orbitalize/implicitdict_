@@ -1,5 +1,5 @@
 import json
-from enum import Enum
+from enum import Enum, StrEnum
 from typing import Literal
 
 import pytest
@@ -48,7 +48,7 @@ class MyIntEnum(int, Enum):
     Value3 = 3
 
 
-class MyStrEnum(str, Enum):
+class MyStrEnum(StrEnum):
     Value1 = "foo"
     Value2 = "bar"
     Value3 = "baz"
